@@ -1,0 +1,77 @@
+body {
+  background-color: #0e185f;
+  display: flex;
+  flex-direction: column;
+}
+.visible {
+  visibility: hidden;
+}
+#main {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 20px;
+  border-radius: 15%;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.bar {
+  width: 42px;
+  background-color: #00ffdd;
+  height: 5px;
+  margin: auto;
+  padding: 1px;
+  border-radius: 20%;
+ 
+}
+.bar:hover{
+    background-color: #e45826;
+}
+.bar2{ animation-name: go;
+    animation-duration: 0.9s;
+  animation-iteration-count: 1;
+}
+@keyframes go {
+    23%{
+        transform:skew(50deg);  
+    }
+    50%{
+         transform:translatex(70px);
+    }
+    85%{
+        transform:scaleX(1.9);
+    }
+}
+ul {
+  max-width: 40%;
+  padding: 2rem;
+  border-radius: 5%;
+  margin-left: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  ul {
+    max-width: 80%;
+  }
+}
+a {
+  font-size: x-large;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e45826;
+  padding: 2rem;
+  font-weight: 700;
+}
+li {
+  padding: 1.5rem;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+  border: 2px rgb(77, 28, 122) solid;
+  background-color: #e8ffc2;
+}
+li:hover {
+  background-color: #c1dd94;
+  cursor: pointer;
+  transform: scale(1.02);
+}
